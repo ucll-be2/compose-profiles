@@ -1,6 +1,4 @@
-DROP TABLE IF EXISTS movie_actors;
-DROP TABLE IF EXISTS actor;
-DROP TABLE IF EXISTS movie;
+DROP TABLE IF EXISTS actor, movie, movie_actors CASCADE;
 
 CREATE TABLE actor
 (
