@@ -5,45 +5,51 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.6</version>
+        <version>4.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>be.ucll.backend2</groupId>
-    <artifactId>compose-postgresql</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Compose-PostgreSQL</name>
-    <description>Compose-PostgreSQL</description>
-    <url/>
+    <artifactId>compose-profiles</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <name>Compose-Profiles</name>
+    <description>Compose-Profiles</description>
+    <url>https://github.com/ucll-be2/compose-profiles</url>
     <licenses>
         <license/>
     </licenses>
     <developers>
-        <developer/>
+        <developer>
+            <id>RockinRoel</id>
+            <name>Roel Standaert</name>
+            <email>roel.standaert@ucll.be</email>
+            <organization>UC Leuven VZW</organization>
+            <organizationUrl>https://www.ucll.be</organizationUrl>
+            <timezone>Europe/Brussels</timezone>
+        </developer>
     </developers>
     <scm>
-        <connection/>
-        <developerConnection/>
+        <connection>scm:git:https://github.com/ucll-be2/compose-profiles.git</connection>
+        <developerConnection>scm:git:https://github.com/ucll-be2/compose-profiles.git</developerConnection>
         <tag/>
-        <url/>
+        <url>https://github.com/ucll-be2/compose-profiles</url>
     </scm>
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-h2console</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -53,6 +59,17 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

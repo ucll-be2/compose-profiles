@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Compose-PostgreSQL
+    name: Compose-Profiles
   jpa:
     properties:
       hibernate:

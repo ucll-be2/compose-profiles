@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("!prod")
+@Profile({"init", "!prod"})
 public class DbInitializer {
-    private ActorRepository actorRepository;
-    private MovieRepository movieRepository;
+    private final ActorRepository actorRepository;
+    private final MovieRepository movieRepository;
 
     public DbInitializer(ActorRepository actorRepository, MovieRepository movieRepository) {
         this.actorRepository = actorRepository;
